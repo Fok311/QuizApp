@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background"
+    tools:context=".ui.AddQuiz.AddQuizFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:boxStrokeColor="@color/ok"
+        android:textColorHint="@color/ok"
+        app:hintTextColor="@color/ok"
+        android:hint="Enter Quiz id">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etQuizId"
+            android:layout_width="match_parent"
+            android:textColor="@color/ok"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:boxStrokeColor="@color/ok"
+        android:textColorHint="@color/ok"
+        app:hintTextColor="@color/ok"
+        android:hint="Enter Title">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:textColor="@color/ok"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="15dp"
+        app:boxStrokeColor="@color/ok"
+        android:textColorHint="@color/ok"
+        app:hintTextColor="@color/ok"
+        android:hint="Enter Timer(in minutes)">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tvTimer"
+            android:layout_width="match_parent"
+            android:textColor="@color/ok"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/gray"
+        android:text="Select CSV File"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvSelectedFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnCsv"
+        android:text="CSV File Name"
+        android:textColor="@color/ok"
+        android:layout_marginTop="5dp"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnImport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/gray"
+        android:text="Import"
+        android:layout_marginTop="32dp" />
+
+
+</LinearLayout>

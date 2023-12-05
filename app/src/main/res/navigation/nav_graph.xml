@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+
+    <action android:id="@+id/toLeaderBoard"
+        app:popUpTo="@id/homeFragment"
+        app:popUpToInclusive="true"
+        app:destination="@+id/leaderBoardFragment" />
+
+    <action android:id="@+id/toLogin"
+        app:popUpTo="@id/homeFragment"
+        app:popUpToInclusive="true"
+        app:destination="@+id/loginFragment" />
+
+    <action android:id="@+id/toQuiz"
+        app:popUpTo="@id/homeFragment"
+        app:popUpToInclusive="true"
+        app:destination="@+id/quizFragment"/>
+
+    <action android:id="@+id/toJoinQuiz"
+        app:popUpTo="@id/homeFragment"
+        app:popUpToInclusive="true"
+        app:destination="@+id/joinQuizFragment" />
+
+    <action android:id="@+id/toHome"
+        app:popUpTo="@id/registerFragment"
+        app:popUpToInclusive="true"
+        app:destination="@+id/homeFragment" />
+
+    <action android:id="@+id/toDashBoard"
+        app:popUpTo="@id/registerFragment"
+        app:popUpToInclusive="true"
+        app:destination="@+id/dashBoardFragment" />
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.fok.quizappproject.ui.Login.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_register"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_dashBoardFragment"
+            app:destination="@id/dashBoardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.fok.quizappproject.ui.Register.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.fok.quizappproject.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/dashBoardFragment"
+        android:name="com.fok.quizappproject.ui.DashBoard.DashBoardFragment"
+        android:label="fragment_dash_board"
+        tools:layout="@layout/fragment_dash_board" >
+        <action
+            android:id="@+id/action_dashBoard_to_addQuiz"
+            app:destination="@id/addQuizFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addQuizFragment"
+        android:name="com.fok.quizappproject.ui.AddQuiz.AddQuizFragment"
+        android:label="fragment_add_quiz"
+        tools:layout="@layout/fragment_add_quiz" />
+    <fragment
+        android:id="@+id/joinQuizFragment"
+        android:name="com.fok.quizappproject.ui.JoinQuiz.JoinQuizFragment"
+        android:label="fragment_join_quiz"
+        tools:layout="@layout/fragment_join_quiz" />
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.fok.quizappproject.ui.Quiz.QuizFragment"
+        android:label="QuizFragment" >
+        <argument app:argType="string"
+            android:name="quizId" />
+    </fragment>
+    <fragment
+        android:id="@+id/leaderBoardFragment"
+        android:name="com.fok.quizappproject.ui.Leaderboard.LeaderBoardFragment"
+        android:label="fragment_leader_board"
+        tools:layout="@layout/fragment_leader_board" />
+</navigation>

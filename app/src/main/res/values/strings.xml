@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Quiz App Project</string>
+    <string name="enter_email">enter email</string>
+    <string name="enter_password">enter password</string>
+    <string name="login">Login</string>
+    <string name="enter_confirm_password">enter confirm password</string>
+    <string name="enter_name">enter name</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">already have an account?</string>
+    <string name="email">email</string>
+    <string name="logout">logout</string>
+    <string name="edit_profile_pic">edit profile pic</string>
+    <string name="profile">profile</string>
+    <string name="join_quiz">Join Quiz</string>
+    <string name="welcome_to_quiz_app">Welcome to Quiz App!</string>
+    <string name="hello_user">Hello, User!</string>
+    <string name="enter_your_role">Enter Your Role</string>
+    <string name="b_answer">B) Answer</string>
+    <string name="c_answer">C) Answer</string>
+    <string name="d_answer">D) Answer</string>
+    <string name="a_answer">A) Answer</string>
+    <string name="this_is_question">This is Question</string>
+    <string name="submit">submit</string>
+    <string name="enter_quiz_id">enter Quiz id</string>
+    <string name="start">Start</string>
+    <string name="forgot_password">forgot password?</string>
+    <string name="send">Send</string>
+    <string name="use_password_to_login">Go Back</string>
+</resources>

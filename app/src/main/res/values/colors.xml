@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#1B58C1</color>
+    <color name="background">#161A30</color>
+    <color name="ok">#F0ECE5</color>
+    <color name="gray">#31304D</color>
+    <color name="custom_radio_button_color">#000000</color>
+    <color name="error">#F30000</color>
+</resources>

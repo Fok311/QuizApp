@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "586132978259",
+    "project_id": "quiz-app-project-5150f",
+    "storage_bucket": "quiz-app-project-5150f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:586132978259:android:b293f287da2a5c61f564a6",
+        "android_client_info": {
+          "package_name": "com.fok.quizappproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVt2tfK2tdEjyEey-oqaIHzcwkZRFd9no"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
